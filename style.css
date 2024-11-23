@@ -109,7 +109,14 @@ button {
     #modal {
         position: unset;
         top: 0;
+        width: fit-content;
         grid-column: 2/3;
+        height: 50%;
+    }
+
+    #modaltext {
+        width: fit-content;
+        word-wrap: break-word;
     }
 
     #modal button {
