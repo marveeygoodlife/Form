@@ -15,8 +15,11 @@ button.addEventListener('click', ()=> {
     const lastname = lastName.value;
 
     modal.style.display = "block";// display modal div
-    modalText.textContent = `first name: ${firstname}, last name: ${lastname}, user name: ${username}`; // display input value
+    modalText.textContent = `
+    FIRST NAME: ${firstname},\n 
+    LAST NAME: ${lastname},\n USERNAME: ${username}`; // display input value
     //console.log();
+    modalText.style.whiteSpace = "pre";
 })
 
 })
