@@ -32,7 +32,8 @@ main {
 }
 
 .form {
-    width: 300px;
+    min-width: 290px;
+    width: 350px;
     display: grid;
     place-items: center;
     padding: 30px;
