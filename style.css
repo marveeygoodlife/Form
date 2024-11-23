@@ -1,0 +1,118 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: aliceblue;
+}
+
+h1 {
+    text-align: center;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: grey;
+    font-size: 1rem;
+}
+
+.form {
+    display: grid;
+    place-items: center;
+    padding: 30px;
+}
+
+#form {
+    width: 100%;
+}
+
+p {
+    margin: 1rem auto;
+    width: fit-content;
+}
+
+fieldset {
+    height: auto;
+    background-color: aliceblue;
+    margin: 0 auto;
+    width: 300px;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+
+fieldset div {
+    padding: 10px;
+    width: 100%;
+
+}
+
+input,
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    max-height: 20px;
+    width: 90%;
+}
+
+#modal {
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    background-color: orange;
+    border: 2px solid black;
+    border-top-left-radius: 17px;
+    border-bottom-right-radius: 19px;
+    margin: 20px 0 0 2rem;
+    width: 300px;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    z-index: 1000;
+}
+
+#modaltext {
+    margin-bottom: 1rem;
+}
+
+button {
+    margin: 10px auto;
+    border: none;
+    width: 100px;
+    height: 15px;
+    font-weight: 700;
+}
+
+@media screen and (min-width:600px) and (max-width:2000px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .form {
+        display: unset;
+
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #modal {
+        position: unset;
+        top: 0;
+        grid-column: 2/3;
+    }
+
+    #modal button {
+        margin-top: 300px;
+    }
+}
