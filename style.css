@@ -106,17 +106,19 @@ button {
 
     .form {
         display: unset;
-
+        min-width: 300px;
+        max-width: 450px;
         grid-column: 1/2;
         grid-row: 1/2;
+        height: auto;
     }
 
     #modal {
         position: unset;
         top: 0;
-        width: 60%;
+        min-width: 300px;
+        max-width: 450px;
         grid-column: 2/3;
-        height: 50%;
         overflow: hidden;
     }
 
@@ -126,7 +128,4 @@ button {
         width: 100%;
     }
 
-    #modal button {
-        margin-top: 300px;
-    }
 }
